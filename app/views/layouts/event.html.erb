@@ -1,0 +1,25 @@
+<% content_for :menu do %>
+  <ul>
+    <li><%= link_to "Home", root_path%></li>
+    <li><%= link_to "Event", event_path, :id => "current" %></li>
+    <li><%= link_to "Venue", venue_path %></li>
+    <li><%= link_to "Users", user_path %></li>
+    <li><%= link_to "Contact", contact_path %></li>
+  </ul>
+<% end %>
+
+<% content_for :sidebar do %>
+  <div class="sidebox">
+    <h1><%= link_to "Event", event_path %></h1>
+    <ul class="sidemenu">
+      <li><%= link_to "Committees", committees_path, :class => "top" %></li>
+      <li><%= link_to "Scientific Sessions", scientific_sessions_path %></li>
+      <li><%= link_to "Important Dates", important_dates_path %></li>
+      <li><%= link_to "Program", program_path %></li>
+      <li><%= link_to "Field Trips", field_trips_path %></li>
+      <li><%= link_to "Our Past", our_past_path %></li>
+    </ul>
+  </div>
+  <%= yield :sidebar %>
+<% end %>
+<%= render :file => 'layouts/application' %>

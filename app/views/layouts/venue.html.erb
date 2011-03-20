@@ -1,0 +1,21 @@
+<% content_for :menu do %>
+  <ul>
+    <li><%= link_to "Home", root_path%></li>
+    <li><%= link_to "Event", event_path %></li>
+    <li><%= link_to "Venue", venue_path, :id => "current" %></li>
+    <li><%= link_to "Users", user_path %></li>
+    <li><%= link_to "Contact", contact_path %></li>
+  </ul>
+<% end %>
+
+<% content_for :sidebar do %>
+  <div class="sidebox">
+    <h1><%= link_to "Venue", event_path %></h1>
+    <ul class="sidemenu">
+      <li><%= link_to "Hotel", hotel_path, :class => "top" %></li>
+      <li><%= link_to "Lodging & Travel", lodging_travel_path %></li>
+    </ul>
+  </div>
+  <%= yield :sidebar %>
+<% end %>
+<%= render :file => 'layouts/application' %>

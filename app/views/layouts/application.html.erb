@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  <head>
+
+    <meta name="Description" content="Information architecture, Web Design, Web Standards." />
+    <meta name="Keywords" content="your, keywords" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="Distribution" content="Global" />
+    <meta name="Author" content="Erwin Aligam - ealigam@gmail.com" />
+    <meta name="Robots" content="index,follow" />
+
+    <%= stylesheet_link_tag :all %>
+    <%= javascript_include_tag :defaults %>
+    <%= csrf_meta_tag %>
+
+    <title>Gondwana 14</title>
+
+  </head>
+
+  <body>
+    <!-- wrap starts here -->
+    <div id="wrap">
+
+      <div id="header">
+        <div id="header-content">
+
+          <h1 id="logo"><a href="<%= root_path %>" title="Gondwana 14">Gondwana<span class="gray">14</span></a></h1>
+          <h2 id="slogan">East meets West</h2>
+
+          <%= yield :menu %>
+
+          <h1 id="date">25th to 30th September, 2011</h1>
+          <h1 id="place">Armação dos Buzios, Rio de Janeiro, Brazil</h1>
+
+        </div>
+      </div>
+
+      <div class="headerphoto"></div>
+
+      <!-- content-wrap starts here -->
+      <div id="content-wrap">
+        <div id="content">
+
+          <div id="sidebar" >
+            <%= yield :sidebar %>
+          </div>
+
+          <div id="main">
+            <%= yield :main %>
+          </div>
+
+          <!-- content-wrap ends here -->
+        </div>
+      </div>
+
+      <!-- footer starts here -->
+      <div id="footer">
+        <div id="footer-content">
+
+          <ul class="sponsors">
+            <li><div class="vertical-align">
+                <img src="/images/sponsors/petrobras.jpeg" alt="Petrobras"/>
+              </div>
+            </li>
+            <li><div class="vertical-align">
+                <img src="/images/sponsors/ufrj.jpg" alt="Universidade Federal do Rio de Janeiro"/>
+              </div>
+            </li>
+            <li><div class="vertical-align">
+                <img src="/images/sponsors/uerj.jpeg" alt="Universidade Estadual do Rio de Janeiro"/>
+              </div>
+            </li>
+            <li>
+              <div class="vertical-align">
+                <img src="/images/sponsors/ufrrj.jpg" alt="Universidade Federal Rural do Rio de Janeiro"/>
+              </div>
+            </li>
+            <li>
+              <div class="vertical-align">
+                <img src="/images/sponsors/uff.jpg" alt="Universidade Federal Fluminense"/>
+              </div>
+            </li>
+          </ul>
+          <br style="clear: both;"/>
+          <ul class="sponsors">
+            <li>
+              <div class="vertical-align">
+                <img src="/images/sponsors/academia_brasileira_ciencias.jpg" alt="Academia Brasileira de Ciências" class="vertical-align"/>
+              </div>
+            </li>
+            <li>
+              <div class="vertical-align">
+                <img src="/images/sponsors/drm-rj.jpg" alt="Departamento de Recursos Minerais do Rio de Janeiro"/>
+              </div>
+            </li>
+            <li>
+              <div class="vertical-align">
+                <img src="/images/sponsors/cprm.jpg" alt="Companhia de Pesquisa e Recursos Minerais"/>
+              </div>
+            </li>
+            <li>
+              <div class="vertical-align">
+                <img src="/images/sponsors/sbg.jpg" alt="Sociedade Brasileira de Geologia"/>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <!-- footer ends here -->
+
+      <!-- wrap ends here -->
+    </div>
+
+  </body>
+</html>

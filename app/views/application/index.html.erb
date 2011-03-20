@@ -1,0 +1,45 @@
+<% content_for :menu do %>
+  <ul>
+    <li><%= link_to "Home", root_path, :id => "current" %></li>
+    <li><%= link_to "Event", event_path %></li>
+    <li><%= link_to "Venue", venue_path %></li>
+    <li><%= link_to "Users", user_path %></li>
+    <li><%= link_to "Contact", contact_path %></li>
+  </ul>
+<% end %>
+
+<% content_for :sidebar do %>
+
+  <div class="sidebox">
+    <h1>Sponsors</h1>
+    <ul class="sidemenu">
+      <li><a href="" class="top">Petrobras</a></li>
+      <li><a href="">UFRJ</a></li>
+      <li><a href="">UERJ</a></li>
+      <li><a href="">UFRRJ</a></li>
+      <li><a href="">UFF</a></li>
+      <li><a href="">Academia Brasileira de Ciências</a></li>
+      <li><a href="">DRM-RJ</a></li>
+      <li><a href="">CPRM</a></li>
+      <li><a href="">Sociedade Brasileira de Geologia</a></li>
+    </ul>
+  </div>
+
+<% end %>
+
+
+<% content_for :main do %>
+
+  <div class="post">
+    <h1>About</h1>
+    <p>
+      We are pleased to inform that the Gondwana 14 meeting will be held in the charming city of Búzios
+      at the South Atlantic coast of southeastern Brazil. Following suggestions from the last Gondwana meeting
+      in China, 2008, we propose a symposium where the East meets the West, with participants from all Gondwana fragments.
+      The story of Gondwana can be subdivided in three main periods: the amalgamation (heritage, terranes and thermotectonic events),
+      the development (thermotectonic evolution, intracontinental basins, paleoclimate and active margins) and the break up
+      (rifting processes, mantle plumes and paleogeography).
+    </p>
+  </div>
+
+<% end %>
