@@ -123,17 +123,25 @@ form {
     margin:10px 15px; padding: 0;
     border: 1px solid #f2f2f2;
     background-color: #FAFAFA;
+    float: left;
+    min-width: 90%;
 }
 label {
     display:block;
     font-weight:bold;
-    margin:5px 0;
+    margin:5px;
+    width: 150px;
+    float:left;
+    clear: both;
 }
-input {
+input, select {
+    margin: 5px;
     padding: 2px;
     border:1px solid #eee;
     font: normal 1em "Trebuchet MS", Tahoma, sans-serif;
     color:#777;
+    float:left;
+    width: auto;
 }
 textarea {
     width:400px;
@@ -143,14 +151,17 @@ textarea {
     height:100px;
     display:block;
     color:#777;
+    float:left;
+    width: auto;
 }
 input.button { 
-    margin: 0;
+    margin: 5px;
     font: bold 1em Arial, Sans-serif;
     background: #FFF url(gradientbg.jpg) repeat-x;
     padding: 2px 3px;
     color: #333;
     border: 1px solid #DADADA;
+    clear:both;
 }
 
 /* search form */
@@ -358,6 +369,8 @@ input.button {
     margin: 0; padding: 0;
     background: #FFF url(/images/pixelgreen/gradientbg.jpg) repeat-x;
     border: 1px solid #EFEDED;
+    float:left;
+    min-width: 100%;
 }
 .post .post-footer {
     background-color: #FAFAFA;
@@ -395,12 +408,13 @@ input.button {
     margin: 0; padding: 0;
     font: normal .95em/1.6em 'Trebuchet MS', Tahoma, Arial, sans-serif;
     text-align: left;
+    background-color: #555;
+    height: 100px;
 }
 
 #footer h1, #footer p {	margin-left: 0; }
 
 #footer-content {	
-    border-top: 1px solid #EAEAEA;
     margin: 0 auto;
     padding-left: 15px;
 }
@@ -426,7 +440,7 @@ input.button {
 }
 
 #footer-content .sponsors{
-    width: 650px;
+    width: 700px;
     text-align: center;
     margin: 0 auto;
 }

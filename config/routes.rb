@@ -63,7 +63,12 @@ Gondwana14::Application.routes.draw do
   match "lodging_travel",       :to => "venue#lodging_travel"
 
   match "contact",      :to => "application#contact"
-  match "user",         :to => "application#user"
+  #  match "user",         :to => "user#index"
+
+  resources :users
+  resources :members
+  resources :graders
+  resources :admins
 
   # See how all your routes lay out with "rake routes"
 
